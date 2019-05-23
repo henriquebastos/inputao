@@ -46,7 +46,7 @@ Para converter a entrada, informe a class como 2º parametro.
 int
 ```
 
-Ou crie a uma função que valide o que voce quiser.
+Ou, *por exemplo*, crie a uma função que valide o que voce quiser.
 
 ```python
 >>> def SN(text):
