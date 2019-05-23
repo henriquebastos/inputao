@@ -6,8 +6,8 @@ import os
 README = os.path.join(os.path.dirname(__file__), 'README.md')
 
 setup(name='inputao',
-      version='1.0',
-      description='Um **input** melhor para ajudar os iniciantes em Python.',
+      version='1.1',
+      description='Um input melhor para ajudar os iniciantes em Python.',
       long_description=open(README).read(),
       long_description_content_type="text/markdown",
       author="Henrique Bastos", author_email="henrique@bastos.net",
@@ -24,6 +24,7 @@ setup(name='inputao',
           'Operating System :: OS Independent',
           'Programming Language :: Python',
           'Programming Language :: Python :: 3',
+          'Programming Language :: Python :: 2',
           'Topic :: Software Development :: Libraries',
       ],
       url='http://github.com/henriquebastos/inputao/',)

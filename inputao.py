@@ -1,8 +1,23 @@
+# coding: utf-8
+from __future__ import unicode_literals
+import sys
+
+# Guarda o input padrão antes de substituí-lo.
+if sys.version_info[0] >= 3:
+    builtin_input = input  # PY3
+else:
+    builtin_input = raw_input  #PY2
+
+
+# Tenta ativar o readline se existir.
+try:
+    import readline
+except ImportError:
+    pass
+
+
 def noop(value):
     return value
-
-
-builtin_input = input
 
 
 def input(prompt, convert=noop):
@@ -18,6 +33,10 @@ def input(prompt, convert=noop):
             break
 
     return value
+
+
+# Cheirinho de chulé.
+raw_input = input
 
 
 class SNInvalid(ValueError):
