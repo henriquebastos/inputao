@@ -6,13 +6,15 @@ import os
 README = os.path.join(os.path.dirname(__file__), 'README.md')
 
 setup(name='inputao',
-      version='1.1',
+      version='1.2',
       description='Um input melhor para ajudar os iniciantes em Python.',
       long_description=open(README).read(),
       long_description_content_type="text/markdown",
       author="Henrique Bastos", author_email="henrique@bastos.net",
       license="MIT",
-      py_modules=['inputao'],
+      keywords=['input', 'beginner', 'tool'],
+      packages=['inputao'],
+      package_dir={"inputao": "inputao"},
       zip_safe=True,
       platforms='any',
       include_package_data=True,
