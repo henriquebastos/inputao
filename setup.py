@@ -1,0 +1,28 @@
+# coding: utf-8
+from setuptools import setup
+import os
+
+
+README = os.path.join(os.path.dirname(__file__), 'README.md')
+
+setup(name='inputao',
+      version='1.0',
+      description='Um **input** melhor para ajudar os iniciantes em Python.',
+      long_description=open(README).read(),
+      author="Henrique Bastos", author_email="henrique@bastos.net",
+      license="MIT",
+      py_modules=['inputao'],
+      zip_safe=True,
+      platforms='any',
+      include_package_data=True,
+      classifiers=[
+          'Development Status :: 5 - Production/Stable',
+          'Intended Audience :: Developers',
+          'License :: OSI Approved :: MIT License',
+          'Natural Language :: Portuguese',
+          'Operating System :: OS Independent',
+          'Programming Language :: Python',
+          'Programming Language :: Python :: 3',
+          'Topic :: Software Development :: Libraries',
+      ],
+      url='http://github.com/henriquebastos/inputao/',)
