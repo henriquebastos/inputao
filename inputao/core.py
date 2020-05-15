@@ -6,7 +6,7 @@ from inputao.stdinput import builtin_input
 def noop(value):
     return value
 
-RETRY_MSG = 'Entrada incorreta de dados. Tente novamente.'
+RETRY_MSG = 'Error. Try again.'
 
 def input(prompt, convert=noop, msg=RETRY_MSG):
     while True:
@@ -15,8 +15,8 @@ def input(prompt, convert=noop, msg=RETRY_MSG):
 
         try:
             value = convert(value)
-        except ValueError:
-            print(msg)
+        except ValueError as e:
+            print(str(e) or msg)
         else:
             break
 
