@@ -3,7 +3,4 @@ import sys
 
 
 # Guarda o input padrão antes de substituí-lo.
-if sys.version_info[0] >= 3:
-    builtin_input = input  # PY3
-else:
-    builtin_input = raw_input  #PY2
+builtin_input = input if sys.version_info[0] >= 3 else raw_input
